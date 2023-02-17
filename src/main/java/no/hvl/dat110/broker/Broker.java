@@ -17,7 +17,7 @@ public class Broker extends Stopable {
 	private MessagingServer server;
 	private Dispatcher dispatcher;
 		
-	public Broker (Dispatcher dispatcher,int port) {
+	public Broker (Dispatcher dispatcher, int port) {
 		super("Broker");
 		server = new MessagingServer(port);
 		this.dispatcher = dispatcher;
